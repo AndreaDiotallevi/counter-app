@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 
-class NavBar extends Component {
-  state = {  }
-  render() { 
+const NavBar = (props) => {
     return (
       <div>
         Navbar
-        {this.props.totalCounters}
+        {props.totalCounters}
       </div>
     );
-  }
 }
  
 export default NavBar;
