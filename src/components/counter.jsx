@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
   state = {
-    count: 0,
-    tags: ['tag1', 'tag2', 'tag3']
+    count: 0
   };
 
   styles = {
@@ -20,10 +19,6 @@ class Counter extends Component {
         >
           Increment
         </button>
-        <div>
-          {this.state.tags.length === 0 && 'Please create a new tag!' }
-          {this.renderTags()}
-          </div>
       </div>
     );
   }
